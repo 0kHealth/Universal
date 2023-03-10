@@ -3259,15 +3259,13 @@ local MainTable = {
     Speed = 0,
 }
 
-local Window = library:Window({name = "argysync from walmart"})
+local Window = library:Window({name = "Universal Script - Made by Jayy"})
 
 local AimbotTab = Window:Tab({name = "Aimbot"})
 
 local VisualsTab = Window:Tab({name = "Visuals"})
 
 local MiscTab = Window:Tab({name = "Misc"})
-
-local SettingsTab = Window:Tab({name = "Settings"})
 
 local AimAssistSection = AimbotTab:Section({name = "Aim Assist", side = "left"})
 
@@ -3940,14 +3938,6 @@ end)
 
 MovementSection:Slider({name = "Speed Amount", min = 0, max = 100, dec = 1, suf = "%", def = 0, callback = function(v)
     MainTable.Speed = v/20
-end})
-
-local MenuSection = SettingsTab:Section({name = "Menu", side = "left"})
-
-MenuSection:Toggle({name = "Keybind List", def = false, callback = function(v)  
-    if library.loaded then
-    Window.kblist:ShowHideFromMyLifePleaseSomebodyKillMeIDontWantToBeAliveRightNowImUselessInMyLife(v)
-    end
 end})
 
 local UserInputService = game:GetService("UserInputService")
