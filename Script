@@ -1,14 +1,3 @@
---[[
-Menu Bind set to default: Insert, Changable in first line.
-Use loadstring incase I update it.
-This script has been made by Hearts4Melany#7749, Which is me.
-I would like to say this script been helped by some people and I really appreciate.
-Everyone can use this script for playing in-game or just learning from it.
-I would like to hear your opinion and suggestion, even if its bad or its good: argyyy#1355.
-I ask, don't steal/paste off the code, few months ago I used to do that and it was a mistake it is more fun to do it yourself.
-Anyways this script was made in Synapse X, It might work on other executors but this is the most trusted one.
-Enjoy Your Time!
---]]
 local MenuBind = Enum.KeyCode.RightShift
 
 local uis = game:GetService("UserInputService")
