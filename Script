@@ -289,9 +289,7 @@ do
         end
         return newtbl
     end
-
-    -- // function i will never use?
-
+    
     function utility:ShiftKey(key)
         if string.byte(key) >= 65 and string.byte(key) <= 122 then
             return key:upper()
@@ -300,9 +298,6 @@ do
             return shiftKeybinds[key] or key
         end
     end
-
-    -- // totally not pasted from splix (100%)
-    -- //        oh no im a paster
 
     utility.short_keybind_names = {["MouseButton1"] = "MB1", ["MouseButton2"] = "MB2", ["MouseButton3"] = "MB3", ["Insert"] = "INS", ["LeftAlt"] = "LALT", ["LeftControl"] = "LC", ["LeftShift"] = "LS", ["RightAlt"] = "RALT", ["RightControl"] = "RC", ["RightShift"] = "RS", ["CapsLock"] = "CAPS", ["Return"] = "RET", ["Backspace"] = "BSP"}
 end
